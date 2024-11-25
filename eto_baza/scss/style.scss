@@ -1,0 +1,95 @@
+@import 'defolt_variables.scss';
+@import 'header_and_footer.scss';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 100%;
+}
+
+.text {
+    margin: 30px;
+    width: 50%;
+    height: 100%;
+}
+
+.ThirdFloor {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    background-color: #3939c0;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.inThirdFloor {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+}
+
+.driver {
+    position: absolute;
+    left: 110%;
+    height: 60%;
+    z-index: 1;
+    filter: blur(30px);
+    transition: all 2s;
+}
+
+.inThirdFloor:hover ~ .driver {
+    left: 70%;
+    filter: blur(0px);
+    height: 110%;
+}
+
+h1 {
+    font: 1.4em $mainfont;
+    font-weight: bold;
+    color: white;
+    z-index: 999;
+}
+
+h2 {
+    font: 1.4em $mainfont;
+    font-weight: bold;
+    color: #ffffff;
+    z-index: 999;
+}
+
+h3 {
+    font: 1.4em $mainfont;
+    font-weight: bold;
+    color: white;
+    z-index: 999;
+}
+
+h4 {
+    margin-bottom: 20px;
+    font: 1.4em $mainfont;
+    font-weight: bold;
+    color: white;
+    z-index: 999;
+}
+
+p {
+    font: 1em $mainfont;
+    font-weight: bold;
+    color: rgb(158, 158, 158);
+    z-index: 999;
+}
+
+.maintext {
+    margin-top: 20px;
+    font: 1.1vw $mainfont;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    z-index: 999;
+}
+
